@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<script src="./modules/bootstrap/js/jquery.min.js"></script>
+</head>
+<body>
+<input type="button" onclick="test()" value="test"></input>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$.ajax();
+	alert("HELLO");
+	
+});
+function test(){
+	$.get("test.html",function(data){alert(data)});
+}	
+</script>
+</body>
+</html>

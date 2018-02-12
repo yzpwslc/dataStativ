@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts</title>
+    <link rel="stylesheet" href="./modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/dashboard.css?v=0003">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flek-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href = "#">数据处理系统</a>
+        <ul class="nav-item text-nowrap">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">登出</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <div class="input-group pl-2 pr-2 pt-3 pb-3 border-bottom">
+                        <input type="text" class="form-control" placeholder="参数名称">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">绘制</button>
+                        </div>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link"> <span data-feather="home">常用<span class="sc-only">(current)</span> </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div id="img1" >
+            <div class = "d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <h1 class="h4">IMG TITLE</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-sm btn-outline-secondary">叠加</button>
+                        <button class="btn btn-sm btn-outline-secondary">删除</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainimg" class="imgShow"></div>
+        </div>
+
+        <div id="addimg" class="mr-0 text-center " width="100%" height="40">
+            <button id="addBtn" type="button" class="btn btn-light btn-lg btn-block">添加绘图</button>
+        </div>
+    </main>
+
+    <script src="./modules/echarts.min.js"></script>
+    <script src="./modules/bootstrap/js/jquery.min.js"></script>
+    <script src="./modules/bootstrap/js/popper.js"></script>
+    <script src="./modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./dist/js/main.js?v=1114"></script>
+</body>
+</html>

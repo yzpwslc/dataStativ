@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var url = "./json.php";
+        $.get(url,function(data){
+            var jsonObject = $.parseJSON(data);
+
+        });
+    </script>
+</head>
+<body>
+<!--<h1 class="btn btn-success btn-large"><i class="icon-user icon-white"></i>Hello,World!</h1>
+-->
+  <ul class="nav nav-list">
+	<li class="nav-header" >LIST</li>
+	<li class="active">Home</li> 
+  </ul>
+  <div id="test"></div>
+</body>
+</html>

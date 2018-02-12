@@ -1,0 +1,63 @@
+composer-plugin-api 1.1.0    The Composer Plugin API
+ext-bcmath          0        The bcmath PHP extension (actual version: )
+ext-bz2             0        The bz2 PHP extension (actual version: )
+ext-calendar        0        The calendar PHP extension (actual version: )
+ext-ctype           0        The ctype PHP extension (actual version: )
+ext-curl            0        The curl PHP extension (actual version: )
+ext-date            5.4.45   The date PHP extension
+ext-dba             0        The dba PHP extension (actual version: )
+ext-dom             20031129 The dom PHP extension
+ext-ereg            0        The ereg PHP extension (actual version: )
+ext-exif            0        The exif PHP extension (actual version: 1.4 $Id: 05041...
+ext-fileinfo        1.0.5    The fileinfo PHP extension
+ext-filter          0.11.0   The filter PHP extension
+ext-ftp             0        The ftp PHP extension (actual version: )
+ext-gd              0        The gd PHP extension (actual version: )
+ext-hash            1.0      The hash PHP extension
+ext-iconv           0        The iconv PHP extension (actual version: )
+ext-json            1.2.1    The json PHP extension
+ext-ldap            0        The ldap PHP extension (actual version: )
+ext-libxml          0        The libxml PHP extension (actual version: )
+ext-mbstring        0        The mbstring PHP extension (actual version: )
+ext-mysql           1.0      The mysql PHP extension
+ext-mysqli          0.1      The mysqli PHP extension
+ext-mysqlnd         0        The mysqlnd PHP extension (actual version: mysqlnd 5.0...
+ext-openssl         0        The openssl PHP extension (actual version: )
+ext-pcre            0        The pcre PHP extension (actual version: )
+ext-PDO             1.0.4dev The PDO PHP extension
+ext-pdo_mysql       1.0.2    The pdo_mysql PHP extension
+ext-pdo_sqlite      1.0.1    The pdo_sqlite PHP extension
+ext-Phar            2.0.1    The Phar PHP extension
+ext-posix           0        The posix PHP extension (actual version: )
+ext-readline        5.4.45   The readline PHP extension
+ext-Reflection      0        The Reflection PHP extension (actual version: $Id: f63...
+ext-session         0        The session PHP extension (actual version: )
+ext-shmop           0        The shmop PHP extension (actual version: )
+ext-SimpleXML       0.1      The SimpleXML PHP extension
+ext-snmp            0.1      The snmp PHP extension
+ext-soap            0        The soap PHP extension (actual version: )
+ext-sockets         0        The sockets PHP extension (actual version: )
+ext-SPL             0.2      The SPL PHP extension
+ext-sqlite3         0.7      The sqlite3 PHP extension
+ext-sysvmsg         0        The sysvmsg PHP extension (actual version: )
+ext-sysvsem         0        The sysvsem PHP extension (actual version: )
+ext-sysvshm         0        The sysvshm PHP extension (actual version: )
+ext-tidy            2.0      The tidy PHP extension
+ext-tokenizer       0.1      The tokenizer PHP extension
+ext-wddx            0        The wddx PHP extension (actual version: )
+ext-xml             0        The xml PHP extension (actual version: )
+ext-xmlreader       0.1      The xmlreader PHP extension
+ext-xmlrpc          0.51     The xmlrpc PHP extension
+ext-xmlwriter       0.1      The xmlwriter PHP extension
+ext-xsl             0.1      The xsl PHP extension
+ext-zip             1.11.0   The zip PHP extension
+ext-zlib            2.0      The zlib PHP extension
+lib-curl            7.30.0   The curl PHP library
+lib-iconv           1.11     The iconv PHP library
+lib-libxml          2.9.0    The libxml PHP library
+lib-openssl         0.9.8.30 OpenSSL 0.9.8zd 8 Jan 2015
+lib-pcre            8.02     The pcre PHP library
+lib-xsl             1.1.28   The xsl PHP library
+php                 5.4.45   The PHP interpreter
+php-64bit           5.4.45   The PHP interpreter, 64bit
+php-ipv6            5.4.45   The PHP interpreter, with IPv6 support

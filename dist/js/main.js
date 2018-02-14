@@ -42,9 +42,11 @@ function newChart(){
        // console.log(data0);
         optionArr[divName].dataset.source = data0;
         myChart[divName].setOption(optionArr[divName]);
+        getBaseUrl(myChart[divName]);
     });
-    createOption(1);
 }
+
+
 
 function newOption(){
     var option = {
@@ -63,18 +65,46 @@ function newOption(){
     return option;
 }
 
+function listData(opt){
+    console.log(opt.dataset[0].source);
+    return "<p>2</p>";
+}
+
 function createOption(para){
     var option = {
             legend: {},
             tooltip: {
-                trigger: 'axis',
-                showContent: false
+              trigger: 'axis'
             },
+            animation: false,
             dataset: {
                 source:[]
             },
+            dataZoom:{
+                type: 'slider',
+                yAxisIndex: 0
+
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {
+                        type: 'png',
+                        excludeComponents: ['toolbox','dataZoom','markLine'],
+                        show: true
+                    },
+                    dataView:{
+                        show: true,
+                        optionToContent: function(opt){
+                            return listData(opt);
+                        }
+                    },
+                    dataZoom: {
+                        yAxisIndex: false
+                    }
+                }
+            },
             xAxis: {
-                type: 'category'
+                type: 'time'
             },
             yAxis: {
                 gridIndex: 0
@@ -82,10 +112,33 @@ function createOption(para){
             series: [
                 {
                     type: 'line',
+                    showSymbol: false,
                     seriesLayoutBy: 'row',
                     encode:{
-                        x:0,
-                        y:2
+                        x: [0],
+                        y: [5]
+                    },
+                    markLine: {
+                        silent: true,
+                        symbol: 'circle',
+                        symbolSize: 0,
+                        label: {
+                           position: 'end',
+                           formatter: function(params){
+                               var nameArr = ['t1','t2','tz'];
+                               return nameArr[params.dataIndex] + ":" + params.value;
+                           }
+                        },
+                        lineStyle:{
+                            color: '#000',
+                            width: 2
+                        },
+                        data: [{
+                          yAxis: 1000
+                        },{
+                          yAxis: 2000
+                        }
+                        ]
                     }
                 }
             ]
@@ -97,6 +150,7 @@ function createOption(para){
 
 function addLine(param){
 
+
 }
 
 function updateChart(chart,option){
@@ -107,6 +161,16 @@ function delChart(index){
     myChart[index] = null;
 }
 
+function getBaseUrl(myChart){
+    var img = new Image();
+    var opts = {
+        pixelRatio: 2,
+        backgroundColor: '#fff'
+    };
+    return img.src = myChart.getDataURL(opts);
+    //console.log(img.src);
+
+}
 /**
  * Blocks handler
  */
